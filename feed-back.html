@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hiccup</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header">
+    <div class="header_logo"><a href="index.html">hiccup</a></div>
+    <div class="header_list">
+      <ul>
+        <li class="life-style"><a href="life-style.html">「生活習慣」と言いますと？</a></li>
+        <li class="feed-back"><a href="feed-back.html">あれこれ振り返り</a></li>
+        <li class="keep-going"><a href="keep-going.html">そして続けよう</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="main">
+    <div class="copy-container">
+      <h1 class="catch"><a href="feed-back.html">あれこれ<br>　　　振り返り</a><span class="pop">!</span></h1>
+      <h3 class="sub">"just a little hiccup in our usual wonderful service"</h3>
+      <img src="images/pixel-cells-3976303_1280.png" alt="0" width="1000" height="563" srcset="">
+    </div>
+  </div>
+  <div class="contents-note">
+    <h3 class="section-title">まずは、現状把握。</h3>
+    <div class="assessment-item">
+      <p>身長　(cm)　←　半角数字で入力して下さい！例：164.5</p>
+        <input type="text" name="tall" id="cm" size="40" maxlength="5">
+      <p>体重　(kg)　←　半角数字で入力して下さい！例：59.1</p>
+        <input type="text" name="weight" id="kg" size="40" maxlength="5">
+      <p>あなたのBMIと標準体重は？　</p>
+      <button id="assessment">診断する</button>
+      <p>もしもBMI25以上なら初期肥満です。<a href=risk.html>内臓脂肪のリスク</a>を知って下さい！</p>
+      <p>ちなみに、おへその高さで測定する腹囲の”内臓脂肪がある”とされる判定は、</p>
+      <p>男性が腹囲85cm以上、女性が腹囲90cm以上です。</p>
+      <div id="result-area"></div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-logo">hiccup</div>
+    <div class="footer-list">
+      <ul>
+        <li>about hiccup</li>
+        <li>Site Map</li>
+        <li>お問い合わせ</li>
+      </ul>
+    </div>
+  </div>
+  <script src="scripts/index.js"></script>
+</body>
+</html>

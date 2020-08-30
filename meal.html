@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hiccup</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header">
+    <div class="header_logo"><a href="index.html">hiccup</a></div>
+    <div class="header_list">
+      <ul>
+        <li class="life-style"><a href="life-style.html">「生活習慣」と言いますと？</a></li>
+        <li class="feed-back"><a href="feed-back.html">あれこれ振り返り</a></li>
+        <li class="keep-going"><a href="keep-going.html">そして続けよう</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="main">
+    <div class="copy-container">
+      <h1 class="catch"><a>食事</a><span class="pop">！！！</span></h1>
+      <h3 class="sub">"just a little hiccup in our usual wonderful service"</h3>
+      <img src="images/marc-mueller-dJHdolN553o-unsplash.jpg" alt="0" width="563" height="800" srcset="">
+    </div>
+  </div>
+  <div class="contents-note">
+    <h3 class="section-title">まずは、適量を計算。</h3>
+    <div class="assessment-item">
+      <p>身長　(cm)　←　半角数字で入力して下さい！例：164.5</p>
+        <input type="text" name="tall" id="cm" size="40" maxlength="5">
+      <p>１日の活動量は？</p>
+    <form id="meal">
+      <select name="Move" id="Move" onclick="kcalBMI()">
+        <option value="20" >活動量(20)：デスクワーク
+        <option value="25" >活動量(25)：立ち歩きあり
+        <option value="30" >活動量(30)：重いものを運ぶ
+      </select>
+    </form>
+        <p>あなたの１日の適度な摂取カロリーと主食量は？　</p>
+      <button id="Kcal">計算する</button>
+      <div id="Kcal-area"></div>
+    </div>
+  </div>
+  <div class="assessment-form">
+    <h3 class="section-title"><a>アルコールの適量は？</a></h3>
+    <div class="dear">肝臓がオーバーワークにならない<a>純アルコール量は１日２０ｇ</a>まで！
+      <br>
+      <br>計算方法　：　アルコール（％）×　飲酒量　×100ml　×　比重0.8
+      <br> 例）　ストロング系アルコール９％のロング缶500mlでは？
+      <br>      →→→　９（％）×　５（00ml) ×　0.8 = 36(g)　
+      <br>
+      <br>      つまり、たった１本の酎ハイが、適量の1.8倍なのです。
+      <br>      次の日は休肝日にして、２日に１回、肝臓にも働き方改革を！
+      <br>
+      <br>
+      <img src="images/pixel-cells-3704053_640.png" alt="">
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-logo">hiccup</div>
+    <div class="footer-list">
+      <ul>
+        <li>会社概要</li>
+        <li>採用</li>
+        <li>お問い合わせ</li>
+      </ul>
+    </div>
+  </div>
+  <script src="scripts/meal.js"></script>
+</body>
+</html>

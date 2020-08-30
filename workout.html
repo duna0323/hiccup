@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hiccup</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header">
+    <div class="header_logo"><a href="index.html">hiccup</a></div>
+    <div class="header_list">
+      <ul>
+        <li class="life-style"><a href="life-style.html">「生活習慣」と言いますと？</a></li>
+        <li class="feed-back"><a href="feed-back.html">あれこれ振り返り</a></li>
+        <li class="keep-going"><a href="keep-going.html">そして続けよう</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="main">
+    <div class="copy-container">
+      <h1 class="catch"><a>運動</a><span class="pop">！</span></h1>
+      <h3 class="sub">"just a little hiccup in our usual wonderful service"</h3>
+      <img src="images/patrick-malleret-FcGFkz885TI-unsplash.jpg" alt="0" width="563" height="900" srcset="">
+      <div class="dear">子供の頃は、競争があるプレッシャーから
+        <br>運動を好きになれなかったかもしれない。
+        <br>今は、ただ楽しいから続けたい、そんな存在になります♪
+        <br>
+        <br>
+        <br>その素晴らしい効果「ランニングハイ」
+        <br>積極的な気分転換に、服装やシューズを選んで、気分を上げて。
+        <br>クーラーの効いた部屋に置いたランニングマシンで。
+        <br>
+        <img src="images/pixel-cells-3974190_640.png" alt="">
+        <br>
+        <br>脱水予防に、水を飲んでから。
+        <br>10分走って20分歩いたって良い。
+        <br>BMI30以上の過体重の方は、膝を痛めないようにプールで浮力を利用して歩く。
+        <br>内臓脂肪を減らすために、１週間に、トータル150分、運動して下さい。
+      </div>
+    </div>
+  </div>
+  <div class="contents">
+    <h3 class="section-title">運動の消費カロリーは少なくても、効果は抜群。</h3>
+    <div class="assessment-item">
+      <p>体重　(kg)　←　半角数字で入力して下さい！例：59.1</p>
+        <input type="text" name="Weight" id="kg" size="40" maxlength="5">
+      <p>運動の消費エネルギーは？</p>
+    <form id="Running">
+      <select name="Run" id="Run" onclick="kcalMETs()">
+        <option value="3" >ウォーキング(4METs)
+        <option value="3.5" >プールを歩く(4.5METs)
+        <option value="6" >ジョギング(7METs)
+      </select>
+    </form>
+        <p>あなたの30分あたりの運動エネルギーは？　</p>
+      <button id="METs">計算する</button>
+      <div id="METs-area"></div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-logo">hiccup</div>
+    <div class="footer-list">
+      <ul>
+        <li>会社概要</li>
+        <li>採用</li>
+        <li>お問い合わせ</li>
+      </ul>
+    </div>
+  </div>
+  <script src="scripts/workout.js"></script>
+</body>
+</html>
