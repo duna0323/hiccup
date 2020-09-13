@@ -28,11 +28,11 @@
           </ul>
         </li>
         <li class="keep-going"><a href="keep-going.html">そして始めよう</a>
-          <!-- <ul>
+          <ul>
             <li><a href="#">モニタリング</a></li>
             <li><a href="#">記録のすすめ</a></li>
             <li><a href="#">そして続けよう</a></li>
-          </ul> -->
+          </ul>
         </li>
       </ul>
     </div>
@@ -68,10 +68,10 @@
     <h3 class="section-title">運動の消費カロリーは少なくても、<br>効果は抜群。</h3>
     <div class="assessment-item">
       <p>体重　(kg)　←　半角数字で入力して下さい！例：59.1</p>
-        <input type="text" name="Weight" id="kg" size="40" maxlength="5">
+        <input type="text" name="Weight" id="kg2" size="40" maxlength="5">
       <p>運動の消費エネルギーは？</p>
     <form id="Running">
-      <select name="Run" id="Run" onclick="kcalMETs()">
+      <select name="Run" id="Run" onclick="this.form.Run.value = userMETsInput">
         <option value="3" >ウォーキング(4METs)
         <option value="3.5" >プールを歩く(4.5METs)
         <option value="6" >ジョギング(7METs)

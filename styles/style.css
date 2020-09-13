@@ -67,16 +67,18 @@ li {
 ul li ul{
   position: absolute;
   top: 70px;
-  left: 0;
+  left: 0px;
 }
 ul li ul li{
   display: block;
-  float: left;
-  padding:0px;
+  text-align: center;
+  padding: 0px;
 }
 ul li ul li a{
+  display: inline-block;
   background-color: #383634;
-  padding: 35px 30px;
+  width: 250px;
+  height: 90px;
   color:#dee7ec;
 }
 ul li ul li a:hover{
