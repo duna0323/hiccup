@@ -1,8 +1,8 @@
 'use strict';
 const userTallInput2 = document.getElementById('cm2');
-const userMoveInput = document.getElementById('Move')
+const userMoveInput = document.getElementById('Move');
 const KcalButton = document.getElementById('Kcal');
-const KcalDivided = document.getElementById('Kcal-area')
+const KcalDivided = document.getElementById('Kcal-area');
 const header = document.createElement('h3');
 const paragraph = document.createElement('p');
 const paragraph2 = document.createElement('div');
@@ -21,12 +21,13 @@ function removeAllChildren(element) {
 }
 
 KcalButton.onclick = () => {
+  const userTall2 = userTallInput2.value;
   if (userTall2.length === 0 ) { //身長または活動量が空の時は
     
     header.innerText = '計算方法';
     KcalDivided.appendChild(header);
     
-    paragraph.innerText = '標準体重（ 身長(m) × 身長(m) × 22 ）× 活動量'
+    paragraph.innerText = '標準体重（ 身長(m) × 身長(m) × 22 ）× 活動量';
     KcalDivided.appendChild(paragraph);
     
   } else if (userTall2.indexOf('１') !== -1)　{ //半角英数でない入力の時は
@@ -57,7 +58,6 @@ KcalButton.onclick = () => {
  */
 
 function kcalBMI(userTall2) {
-  const userTall2 = userTallInput2.value;
   const userMove = userMoveInput.value;
   const userBmi2 = userTall2 / 100 * userTall2 / 100;
   const bmi22kcal = userBmi2 * 22 * userMove;
