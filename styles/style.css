@@ -31,6 +31,7 @@ li {
 }
 
 .header {
+  position: relative;
   background: #383634;
   color: #ffffff;
   height: 90px;
@@ -57,26 +58,29 @@ li {
 
 .header_list {
   float: left;
+  padding: 10px 50px;
 }
 
 .header_list li {
   float: left;
-  padding: 33px 20px;
+  padding: 10px 30px;
 }
 
 ul li ul{
   position: absolute;
-  top: 70px;
-  left: 0;
+  top: 50px;
+  left: 0px;
 }
 ul li ul li{
-  display: block;
-  float: left;
-  padding:0px;
+  display: inline-block;
+  text-align: center;
+  margin: 0px auto;
 }
 ul li ul li a{
+  display: block;
   background-color: #383634;
-  padding: 35px 30px;
+  width: 250px;
+  height: 90px;
   color:#dee7ec;
 }
 ul li ul li a:hover{

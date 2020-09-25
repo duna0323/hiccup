@@ -28,11 +28,11 @@
           </ul>
         </li>
         <li class="keep-going"><a href="keep-going.html">そして始めよう</a>
-          <!-- <ul>
+          <ul>
             <li><a href="#">モニタリング</a></li>
             <li><a href="#">記録のすすめ</a></li>
             <li><a href="#">そして続けよう</a></li>
-          </ul> -->
+          </ul>
         </li>
       </ul>
     </div>
@@ -48,10 +48,10 @@
     <h3 class="section-title">まずは、適量を計算。</h3>
     <div class="assessment-item">
       <p>身長　(cm)　←　半角数字で入力して下さい！例：164.5</p>
-        <input type="text" name="tall" id="cm" size="40" maxlength="5">
+        <input type="text" name="tall2" id="cm2" size="40" maxlength="5">
       <p>１日の活動量は？</p>
     <form id="meal">
-      <select name="Move" id="Move" onclick="kcalBMI()">
+      <select name="Move" id="Move" onclick="this.form.Move.value = userMoveInput">
         <option value="20" >活動量(20)：デスクワーク
         <option value="25" >活動量(25)：立ち歩きあり
         <option value="30" >活動量(30)：重いものを運ぶ
@@ -64,7 +64,8 @@
   </div>
   <div class="assessment-form">
     <h3 class="section-title"><a>アルコールの適量は？</a></h3>
-    <div class="dear">肝臓がオーバーワークにならない<a>純アルコール量は１日２０ｇ</a>まで！
+      <div class="dear">肝臓がオーバーワークにならない<a>純アルコール量は１日２０ｇ</a>まで！
+      <br>
       <br>
       <br>
       <br>計算方法　：　アルコール（％）×　飲酒量　×100ml　×　比重0.8
