@@ -31,6 +31,7 @@ li {
 }
 
 .header {
+  position: relative;
   background: #383634;
   color: #ffffff;
   height: 90px;
@@ -57,25 +58,26 @@ li {
 
 .header_list {
   float: left;
+  padding: 10px 50px;
 }
 
 .header_list li {
   float: left;
-  padding: 33px 20px;
+  padding: 10px 30px;
 }
 
 ul li ul{
   position: absolute;
-  top: 70px;
+  top: 50px;
   left: 0px;
 }
 ul li ul li{
-  display: block;
+  display: inline-block;
   text-align: center;
-  padding: 0px;
+  margin: 0px auto;
 }
 ul li ul li a{
-  display: inline-block;
+  display: block;
   background-color: #383634;
   width: 250px;
   height: 90px;
